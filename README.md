@@ -1,10 +1,19 @@
 # NET4207 Stock Inventory Manager - Flutter & Cloud Firestore
 
 Cross Platform Mobile App Development | Practical Lab Test  
-**Student Name:** Sujith Devabhaktuni  
+**Student Name:** Sujith  
 **Student ID:** I26042877  
 **Module:** NET4207 Cross Platform Mobile App Development  
 **Submission Repository:** https://github.com/sujith9297/cross-platform-i26042877  
+**Live Application (GitHub Pages):** [https://sujith9297.github.io/cross-platform-i26042877/](https://sujith9297.github.io/cross-platform-i26042877/)  
+
+---
+
+## 🌐 Live Web Deployment (GitHub Pages)
+The Flutter application is configured for automated CI/CD deployment via **GitHub Actions & GitHub Pages**:
+- **Live URL:** [https://sujith9297.github.io/cross-platform-i26042877/](https://sujith9297.github.io/cross-platform-i26042877/)
+- **Automated Workflow:** `.github/workflows/deploy.yml` compiles Flutter Web with base href `/cross-platform-i26042877/` and deploys directly to GitHub Pages.
+- **Activation Setting:** In GitHub Repository Settings > **Pages** > **Build and deployment > Source**, select **GitHub Actions**.  
 
 ---
 
