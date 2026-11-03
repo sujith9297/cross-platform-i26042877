@@ -4,7 +4,7 @@ Cross Platform Mobile App Development | Practical Lab Test
 **Student Name:** Sujith Devabhaktuni  
 **Student ID:** I26042877  
 **Module:** NET4207 Cross Platform Mobile App Development  
-**Submission Repository:** https://github.com/Sujith-Devabhaktuni/NET4207_Stock_Inventory_Lab_Test  
+**Submission Repository:** https://github.com/sujith9297/cross-platform-i26042877  
 
 ---
 
