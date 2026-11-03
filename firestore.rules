@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /stockItems/{itemId} {
+      // Allow read and write for the classroom lab test environment
+      allow read: if true;
+      allow write: if request.resource.data.sku is string
+                   && request.resource.data.sku.matches('^STK-[0-9]{3}$')
+                   && request.resource.data.itemName is string
+                   && request.resource.data.itemName.size() >= 3
+                   && request.resource.data.category in ['Electronics', 'Stationery', 'Hardware', 'Grocery']
+                   && request.resource.data.quantity is int
+                   && request.resource.data.quantity >= 0
+                   && (request.resource.data.unitPrice is int || request.resource.data.unitPrice is float)
+                   && request.resource.data.unitPrice > 0
+                   && request.resource.data.reorderLevel is int
+                   && request.resource.data.reorderLevel >= 0;
+    }
+  }
+}
